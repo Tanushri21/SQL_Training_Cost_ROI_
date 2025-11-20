@@ -107,7 +107,7 @@ order by
     "Department Total Gap Score" DESC
 Limit 3;
 ```
-
+<img width="590" height="310" alt="image" src="https://github.com/user-attachments/assets/5100490b-fee8-4688-81db-4583d05c8c09" />
 
 **Key Breakdown:**      
 • Here **Department Total Gap Score**, this quantifies the single largest skill deficiency for a specific team.It proves that gap is severe and localized to a specific team.     
@@ -145,6 +145,9 @@ ORDER BY
     "Affected Skill Count" DESC      -- Then by the number of different skills affected
 LIMIT 3; -- Returns only the single highest-risk employee
 ```
+
+<img width="589" height="283" alt="image" src="https://github.com/user-attachments/assets/164e1bba-7d00-4ab3-87f8-d20de652f1bb" />
+
 **Key Breakdown:**      
 • This query identifes individuals whith three severe skill gaps.     
 • This list is crucial for HR inntervention-these employees need immediate coaching or customized             development plans to prevent performance failure.     
@@ -169,6 +172,9 @@ skills.skill_id
 having 
 avg(emp_skill.required_proficiency-emp_skill.current_proficiency) > 0;
 ```
+
+<img width="608" height="316" alt="image" src="https://github.com/user-attachments/assets/e38019bd-dfd2-4e2d-958c-41989c5632f9" />
+
 **Key Breakdown:**         
 • This query returnes skills like advanced data modeling which had a high average gap but were missing from the tranining() table.       
 • Here , it tells the training department exactly what new course to build next to maximize business impact.     
